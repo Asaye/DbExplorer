@@ -1,0 +1,194 @@
+<div class="modal show" id="loginModalMain">
+    <div id="loginModal" >
+        <div class="modal-content rightToLeftModal">
+            <div class="modal-header loginModalHeader">
+                <button type="button" class="close" ng-click="actions.closeLoginModal()" id="logInModalCloseButton">&times;</button>
+                <h4 class="modal-title">Login Settings</h4>
+            </div>
+            <div class="modal-body loginModalPanel">
+                <div id="detailsAccordion">
+                    <uib-accordion>
+                        <div class="panel-group loginModalPanel">
+                            <div uib-accordion-group id="pFramework" ng-init="pFramework.open = false" is-open="pFramework.open" class="detailsAccordionHeading">
+                                <uib-accordion-heading><span class="pull-right glyphicon" ng-class="{'glyphicon-menu-down':!pFramework.open,'glyphicon-menu-up':pFramework.open}"></span>Persistence Framework</uib-accordion-heading>
+                                <div class="well well-sm db-well">
+                                    <div>
+                                        <div class="form-group db-form-group">
+                                            <form class="form-horizontal">
+                                                <label for="hibernate" class="radio-inline control-label">
+                                                    <span>
+                                                        <input ng-model="preferences.framework" type="radio" class="radio-inline" value="Hibernate" />
+                                                    </span>Hibernate
+                                                </label>
+                                                <label for="jdbc" class="radio-inline control-label">
+                                                    <span>
+                                                        <input ng-model="preferences.framework" type="radio" class="radio-inline" value="JDBC" />
+                                                    </span>JDBC
+                                                </label>
+                                                <label for="spring" class="radio-inline control-label">
+                                                    <span>
+                                                        <input ng-model="preferences.framework" type="radio" class="radio-inline" value="Spring" />
+                                                    </span>Spring
+                                                </label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="panel-group loginModalPanel">
+                            <div uib-accordion-group ng-init="dbName.open=false" is-open="dbName.open" class="detailsAccordionHeading">
+                                <uib-accordion-heading><span class="pull-right glyphicon" ng-class="{'glyphicon-menu-down':!dbName.open,'glyphicon-menu-up':dbName.open}"></span>Database Name</uib-accordion-heading>
+                                <div class="well well-sm db-well">
+                                    <div class="db-panel-body">
+                                        <form class="form-horizontal center-block">
+                                            <div class="form-group db-form-group">
+                                                <div>
+                                                    <input ng-model="preferences.dbName" type="text" name="dbName" class="form-control"/>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group loginModalPanel">
+                            <div uib-accordion-group ng-init="hostAddress.open = false" is-open="hostAddress.open" class="detailsAccordionHeading">
+                                <uib-accordion-heading><span class="pull-right glyphicon" ng-class="{'glyphicon-menu-down':!hostAddress.open,'glyphicon-menu-up':hostAddress.open}"></span>Host Address</uib-accordion-heading>
+                                <div class="well well-sm db-well">
+                                    <div class="db-panel-body">
+                                        <form class="form-horizontal center-block">
+                                            <div class="form-group db-form-group">
+                                                <div>
+                                                    <input ng-model="preferences.hostAddress" type="text" name="hostAddress" class="form-control"/>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group loginModalPanel">
+                            <div uib-accordion-group ng-init="portNumber.open = false" is-open="portNumber.open" class="detailsAccordionHeading">
+                                <uib-accordion-heading><span class="pull-right glyphicon" ng-class="{'glyphicon-menu-down':!portNumber.open,'glyphicon-menu-up':portNumber.open}"></span>Port Number</uib-accordion-heading>
+                                <div class="well well-sm db-well">
+                                    <div class="db-panel-body">
+                                        <form class="form-horizontal center-block">
+                                            <div class="form-group db-form-group">
+                                                <div>
+                                                    <input ng-model="preferences.portNumber" type="text" name="portNumber" class="form-control" placeholder="Enter port number" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-group loginModalPanel">
+                            <div uib-accordion-group id="dbUrl" ng-init="dbUrl.open = false" is-open="dbUrl.open" class="detailsAccordionHeading">
+                                <uib-accordion-heading><span class="pull-right glyphicon" ng-class="{'glyphicon-menu-down':!dbUrl.open,'glyphicon-menu-up':dbUrl.open}"></span>Database URL</uib-accordion-heading>
+                                <div class="well well-sm db-well">
+                                    <div class="db-panel-body">
+                                        <form class="form-horizontal center-block">
+                                            <div class="form-group db-form-group">
+                                                <div>
+                                                    <input ng-model="preferences.databaseUrl" type="text" name="dbUrl" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </uib-accordion>
+
+                </div>
+                <form class="form">
+            <div class="checkbox">
+                <label class="text-left">
+                    <input ng-model="preferences.userPreferences" 
+                            type="checkbox" /> Save my preferences
+                </label>
+            </div>
+        </form>
+            </div> 
+
+            <div class="modal-footer">
+                <button ng-model="closeLoginModal" type="button" class="btn btn-primary .dbExplorerButton"
+                        data-dismiss="modal">
+                    Close
+                </button>
+                <button ng-model="closeLoginModal" type="button" class="btn btn-primary">
+                    Save changes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+            <!--<div class="panel panel-primary">
+            <div class="panel-heading text-left detailsHeadings">
+                <strong class="panel-title ">Host Machine</strong>
+            </div>
+            <div class="panel-body detailsContents">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="localHost" class="radio-inline control-label">
+                            <span>
+                                <input type="radio" class="radio-inline" name="localHost" />
+                            </span>Localhost
+                        </label>
+                        <label for="otherHost" class="radio-inline control-label">
+                            <span>
+                                <input type="radio" class="radio-inline" name="otherHost" />
+                            </span>Other
+                        </label>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" name="hostAddress" class="form-control" placeholder="Enter IP address/Domain name" />
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading text-left detailsHeadings">
+                <strong class="panel-title ">Port number</strong>
+            </div>
+            <div class="panel-body detailsContents">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <span>
+                            <input type="text" name="portNumber" class="form-control" placeholder="Enter port number" />
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading text-left detailsHeadings">
+                <strong class="panel-title ">
+                    <input ng-model="useDefault" ng-click="changeLoginSetting()" ng-checked="login.isDefault"
+                           type="checkbox">Enter URL
+                </strong>
+            </div>
+            <div class="panel-body detailsContents">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <span>
+                            <input type="text" name="dbConnectionUrl" class="form-control" placeholder="Enter Url" />
+                        </span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+                        </div>-->
+

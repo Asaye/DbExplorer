@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_144">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.5 (2)">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Asaye/Desktop/J2EE/References/Hibernate/hibernate jars/json-simple-1.1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JDBC_Drivers"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringMVC"/>
+	<classpathentry kind="lib" path="C:/Users/Asaye/Desktop/J2EE/References/Hibernate/hibernate-distribution-3.6.4.Final/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asaye/Desktop/J2EE/References/Spring/spring-framework-5.0.0.RELEASE/docs/javadoc-api"/>
+	<classpathentry kind="lib" path="C:/Users/Asaye/Desktop/J2EE/References/Spring/spring-framework-4.3.5.RELEASE/libs/org.springframework.dao.support.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

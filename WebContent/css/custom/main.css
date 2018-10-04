@@ -1,0 +1,349 @@
+@charset "UTF-8";
+body {    
+    color: #191970;
+    text-align: center;
+    font-weight:normal;
+    margin:0;
+    padding:0;
+    -moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;-o-user-select:none;
+}
+*{
+    font-family: 'Roboto', Malgun Gothic,Euphemia;
+}
+td {
+	text-align:center;
+}
+/********************************* Align ************************************************/
+.center-vertical {
+	display:flex;flex-direction:column;flex-wrap:nowrap;justify-content:space-evenly;
+	align-items: stretch;width:100%;height:100%;margin:0;
+}
+.center-horizontal {
+	display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items: stretch;
+	width:100%;margin:0;
+}
+/****************************** login background ********************************************/
+div.fill-both-abs {
+	height:100%;width:100%;position:absolute;z-index:1;
+}
+.fill-both {
+	height:100%;width:100%;
+}
+div.tiles {
+	height:100%;width:100%;position:absolute;background-color:#66afe9;
+	-webkit-column-count:auto;-webkit-column-gap:2px;-webkit-column-rule:2px solid #fff;
+	-moz-column-count:auto;-moz-column-gap:2px;-moz-column-rule:2px solid #fff;
+	-ms-column-count:auto;-ms-column-gap:2px;-ms-column-rule:2px solid #fff;
+	
+	-moz-column-count:auto;-moz-column-gap:2px;-moz-column-rule:2px solid #fff;
+	-ms-column-count:auto;-ms-column-gap:2px;-ms-column-rule:2px solid #fff;
+	column-count:auto;column-gap:2px;column-rule:2px solid #fff;z-index:-2;
+	-webkit-column-count:auto;-webkit-column-gap:2px;-webkit-column-rule:2px solid #000;
+}
+div.tiles-row {
+	opacity:0.5;-moz-column-width:20px;-ms-column-width:20px;
+	width:100vh;height:100vw;column-width:20px;transform-origin:0% 0%;
+	transform:translateX(100vw) rotate(90deg);-webkit-column-width:20px;
+}
+div.tiles-column {
+	-moz-column-width:75px;-ms-column-width:75px;column-width:75px;-webkit-column-width:75px;
+}
+/********************************** Forms ***********************************************/
+.form {
+    padding: 15px 5px 5px;background-color: #f1f1f1;border-radius:5px;text-align:left;
+}
+div.input-custom.inline-3 {
+	display:inline-block;margin:10px 0 10px 20px;padding-left:10px;width:25%;color:#fff;
+}
+div.inline-container {
+	background-color:#87bdd8;margin:7px -5px;border-radius:3px;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+/********************************* Labels **********************************************/
+.label-left {
+	width:25%;float:left;text-align:left;margin-left:10px;padding-top:5px;padding-left:10px;
+}
+.label-green {
+	font-weight:normal;float:left;margin:0 0 0 0.5em;color:#008080;
+}
+.label-blue {
+	font-weight:normal;float:left;margin:0 0 0 0.5em;color:#3f69aa;
+}
+.input-custom.label-center {
+	margin:10px 10px 5px 10px;padding:0 15px;text-align:center;position:relative;width:auto;
+}
+.input-custom.input-label-left{
+	margin:10px 5px 5px 15px;float:left;max-width:40%;clear:left;
+}
+.input-custom.input-label-right{
+	margin:10px 5px 5px 15px;float:right;max-width:40%;text-align:left;clear:right;
+}
+/********************************* Inputs *********************************************/
+.input-right {
+	margin-left:10px;display:inline-block;width:65%;
+}
+.input-custom {
+	margin:5px 15px;display: inline-block;position: relative;cursor: pointer;font-weight:normal;
+}
+input.form-control.input-sm{
+	 width:4em; float:right;margin:0;padding:5px;color:#3f69aa;
+} 
+/********************************* Menu **********************************************/
+.menu-container {
+	 position:relative;background-color:#fff;border: 1px solid #ccc;height:34px;border-radius:4px;
+	 padding:5px 10px;
+}
+.menu {
+	float:right;display:block;background-color:#fff;width:100%;padding-left:0;position:absolute;
+	z-index:1050;top:32px;left:0;
+}
+.menu-slim {
+	width:100px;height:20px;padding:0;margin:0 10px;padding-right:10px;color:#f1f1f1;
+	position:absolute;top:0;right:30px;line-height:15px;background-color:#2c3e50;opacity:0.5;
+}
+div.menu-slim:hover {
+	background-color:#2c3e50;opacity:0.8;
+}
+.menu-slim > span:first-of-type {
+	padding-left:5px;
+}
+.menu-slim > span.fa {
+	line-height:10px;
+}
+.menu-slim > ul {
+	margin-top:-13px;
+}
+.menu-slim > ul > li:first-of-type {
+	cursor:e-resize;
+}
+.menu-container:hover {
+	background-color: #888;color:#fff;
+}
+.submenu {
+	position:absolute;border:1px solid #ccc;width:100px;color:#000;list-style-type:none;padding:0;
+    left:100%;margin-top:-25px;background-color:#fff;border-radius:4px;
+}
+.selected-item {
+	list-style-type: none;padding:5px;text-align:left;z-index:1050;color:#555;
+	margin-left:0;padding-left:10px;
+}
+.menu-item {
+	list-style-type: none;padding:5px;text-align:left;background-color:#888;color:#fff;
+	border-left: 1px solid #ccc;border-right: 1px solid #ccc;margin-left:0;padding-left:10px;
+}
+.menu-item.dir-up {
+	margin-top:-50px;height:25px;text-align:center;padding:2px;
+}
+.menu-item.dir-up:first-of-type {
+	margin-top:-59.5px;
+}
+.menu-item:hover {
+	background-color:#444;color:#f1f1f1;
+}
+.menu-item:first-child {
+	border-top-left-radius:4px;border-top-right-radius: 4px;border-top: 1px solid #ccc;
+}
+.menu-item:last-child {
+	border-bottom-left-radius:4px;border-bottom-right-radius: 4px;border-bottom: 1px solid #ccc;
+}
+.menu-item.dir-up:last-child {
+	border-top-left-radius:4px;border-top-right-radius: 4px;border-top: 1px solid #ccc;
+	border-bottom:none;border-bottom-left-radius: 0;border-bottom-right-radius: 0;
+}
+.menu-item.dir-up:first-child {
+	border-bottom-left-radius:4px;border-bottom-right-radius: 4px;border-bottom: 1px solid #a79e84;
+	border-top:none;border-top-left-radius: 0;border-top-right-radius: 0;
+}
+.submenu-item {
+	list-style-type: none;padding:5px;text-align:left;z-index:1050;background-color:#aaa;
+	border-left: 1px solid #999;border-right: 1px solid #999;margin-left:0;padding-left:25px;
+	color:#fff;
+}
+.submenu-item:hover {
+	background-color:#666;color:#f1f1f1;
+}
+.submenu-item:first-child {
+	border-top-left-radius:4px;border-top-right-radius: 4px;
+}
+.submenu-item:last-child {
+	border-bottom-left-radius:4px;border-bottom-right-radius: 4px;
+} 
+.tick:before {
+	content:'\2713';color:#fff;margin-left:-20px;margin-right:10px;font-weight:bold;
+}
+.tick:hover:before {
+	color:#f1f1f1;
+}
+/********************************** Carets *******************************************/
+.fa-caret-down, .fa-caret-up, .fa-caret-left, .fa-caret-right {
+	float:right;margin-top:5px;
+}
+.caret-order {
+	cursor:pointer;color:#b4b7ba;float:none;margin:10px 0 10px 10px;
+}
+/*************************************** Radio ******************************************/
+span.radio-adjust{
+	position:absolute;left:-10px;top:5px;
+}
+.radio-outer {
+  position: absolute;height: 12px;width: 12px;background-color: #fff;
+  border-radius: 50%;border:1.5px solid #f1f1f1; box-shadow: 0 0 0 3pt #aaa;
+}
+.radio-inner {
+  position: absolute;top: 3px;left: 3px;width: 12px;height: 12px;
+  border-radius: 50%;background: #fff;border:1px solid #b1cbbb;
+}
+.radio-inner:hover{
+	background-color: #ccc;	
+}
+.radio-checked {
+  background-color: #337ab7;
+}
+/************************************* Checkbox *****************************************/
+/* .checkbox-outer {
+  position: absolute;top:3px;left:-25px;height: 16px;width: 16px;background-color: #f1f1f1;
+  border:1px solid #b1cbbb;margin-left:5px;border-radius:4px;  
+} */
+.checked {
+ 	color:#005960;
+}
+/* .checkbox-outer:hover{
+	background-color: #ccc;	
+}
+.checkbox-adjust {
+	position:relative;top:20%;left:0;width:10px;height:10px;
+}
+.checkbox-outer.checkbox-adjust {
+	position:relative;top:20%;left:0;width:10px;height:10px;
+} */
+.checkbox-cont {
+	display:flex;flex-direction:row;justify-content:space-around;margin:5px;height:auto;
+	clear:both;
+}
+.cont-100 {
+	width:100%;
+}
+.cont-90 {
+	width:90%;
+}
+.cont-70 {
+	width:70%;
+}
+.cont-50 {
+	width:50%;margin-left:25%;
+}
+.c-2 {
+	flex-basis:40%;
+}
+.c-1 {
+	flex-basis:90%;
+}
+.checkbox {
+	flex-basis:16px;height: 16px !important;background-color: #f1f1f1;padding:0;
+  	border:1px solid #b1cbbb;border-radius:4px;cursor:pointer;align-self: flex-end;min-width:16px;
+  	min-height:16px;margin:0 0 2px 0;
+}
+.checkbox-label {
+	flex-grow:2;margin:2px;align-self: flex-start;
+}
+/*********************************** Buttons **********************************************/
+.btn-main {
+     min-width:5em !important;float:right !important;margin:0.8em 0 0 0.5em;
+     background-color:#3f69aa;width:40%;font-weight:bold;
+}
+.btn-close {
+    color:#ccc;opacity:1;
+}
+.btn-resize {
+    color:#ddd;opacity:1;margin:5px 10px;float:right;border:none;padding:0;font-weight:bold;
+    background-color: transparent;
+}
+.btn-close:hover, .btn-resize:hover {
+	color:#fff;opacity:1;
+}
+.btn-close-brd {
+	line-height:12px;color:#ccc;opacity:1;position:absolute;top:2px;right:5px;
+}
+.btn-close-brd:hover {
+	color:#f1f1f1;opacity:1;
+}
+/********************************** Direction curves *************************************/
+.right-to-left {
+    border-top-right-radius:0;border-bottom-right-radius:0;
+}
+.left-to-right {
+    border-top-left-radius:0;border-bottom-left-radius:0;
+}
+/********************************** Colors ***********************************************/
+.color-danger {
+	color:#f55;
+}
+.color-warning {
+	color:#F80;
+}
+.color-info {
+	color:#0099CC;
+}
+.color-success {
+	color:#007E33;
+}
+/********************************** Borders ***********************************************/
+.danger {
+	border:1px  solid red;
+}
+input.ng-invalid.ng-touched {
+	border:1px  solid red;
+}
+.warning {
+	border:1px  solid #F80;
+}
+.info {
+	border:1px  solid #0099CC;
+}
+.success {
+	border:1px  solid #007E33;
+}
+/********************************** Visibility *******************************************/
+.visible {
+	overflow:visible;
+}
+/********************************** Visibility *******************************************/
+li > a {
+	cursor: pointer;
+}
+/********************************* Stacking Order ***************************************/
+.z-2n {
+	position:relative;z-index:-2;
+}
+.z-1n {
+	position:relative;z-index:-1;
+}
+.z-0 {
+	position:relative;z-index:0;
+}
+.z-1 {
+	position:relative;z-index:1;
+}
+.z-2 {
+	position:relative;z-index:2;
+}
+.z-alert {
+	position:absolute;z-index:5;top:25vh;
+}
+td.header-cell {
+	font-weight:bold;
+}
+/*********************************** Scrollbar **********************************************/
+.scrollbar {
+	width:15px;float:right;background-color:#b4b7ba;position:relative;display:inline-block;
+	margin-right:10px;margin-bottom:0;z-index:2;
+}
+.scroller {
+	width:100%;margin:0;padding:1px;background-color:#005960;position:absolute;
+	display:inline-block;left:0;border: solid 2px #b4b7ba;
+}
